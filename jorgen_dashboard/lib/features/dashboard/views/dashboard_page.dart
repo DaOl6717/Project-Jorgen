@@ -43,7 +43,7 @@ class DashboardPage extends StatelessWidget {
           onPressed: () => print('Hej2')),
           ElevatedButton(
           child: Text('Hejsan'),
-          onPressed: () => print('3Hej'),)
+          onPressed: () => print('3He!!'),)
           ],),
         )
       );
