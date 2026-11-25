@@ -36,9 +36,9 @@ class _BtTestWidgetState extends ConsumerState<BtTestWidget> {
                     final d = devices[index];
 
                     return ListTile(
-                      title: Text(d.device.name ?? 'Unknown device'),
-                      subtitle: Text(d.device.address),
-                      trailing: Text('${d.device.rssi} dBm'),
+                      title: Text(d.getName() ?? 'Unknown device'),
+                      subtitle: Text(d.getAddress()),
+                      trailing: Text('${d.getRSSI()} dBm'),
                     );
                   },
                 );
