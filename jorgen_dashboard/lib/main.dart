@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jorgen_dashboard/features/dashboard/features/speedometer/widgets/bt_test.dart';
+import 'package:jorgen_dashboard/features/dashboard/views/dashboard_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ProviderScope(child: const MyHomePage(title: 'Jorgen Dashboard')),
+      home: ProviderScope(child: const DashboardPage()),
     );
   }
 }
